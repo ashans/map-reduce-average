@@ -60,7 +60,8 @@ printf 'My name is Karim\nWhat is your name' | ./mapper.py | ./reducer.py
 Using hadoop
 
 ```shell
-hdfs dfs -mkdir books-input hdfs dfs -put books-input/*.txt books-input
+hdfs dfs -mkdir books-input
+hdfs dfs -put books-input/*.txt books-input
 ```
 
 ```find /usr/lib/ -name *hadoop*streaming*.jar``` to find jar
