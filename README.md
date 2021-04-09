@@ -3,3 +3,12 @@
 ### Creating executable jar
 - Clone this repository
 - run ```mvn clean install```
+
+### Running in AWS EMR as a Step
+- Create S3 bucket
+- Add built `.jar` file to s3
+- create `in\` directory and upload sample number list
+- Go to *Add Step* in EMR console
+- Select `.jar` and provide input and output using args
+![2021-04-09_18-54](https://user-images.githubusercontent.com/25344622/114186912-0637d100-9965-11eb-9d83-d95ae13643e4.png)
+- Click *Add step*
