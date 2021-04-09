@@ -69,5 +69,10 @@ hdfs dfs -put books-input/*.txt books-input
 RUN
 
 ```shell
-hadoop jar /usr/lib/hadoop/hadoop-streaming.jar -files mapper.py,reducer.py -mapper mapper.py -reducer reducer.py -in put books-input -output books-output
+hadoop jar /usr/lib/hadoop/hadoop-streaming.jar -files mapper.py,reducer.py -mapper mapper.py -reducer reducer.py -input books-input -output books-output
+```
+
+GET
+```shell
+hdfs dfs -get books-output/*
 ```
